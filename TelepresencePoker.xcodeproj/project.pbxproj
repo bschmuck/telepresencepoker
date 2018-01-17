@@ -14,6 +14,7 @@
 		F0690986200EDD6900745E55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0690984200EDD6900745E55 /* LaunchScreen.storyboard */; };
 		F0690991200EDD6900745E55 /* TelepresencePokerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0690990200EDD6900745E55 /* TelepresencePokerTests.swift */; };
 		F069099C200EDD6900745E55 /* TelepresencePokerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F069099B200EDD6900745E55 /* TelepresencePokerUITests.swift */; };
+		F06909AA200EDE0500745E55 /* TPMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06909A9200EDE0500745E55 /* TPMainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		F0690997200EDD6900745E55 /* TelepresencePokerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TelepresencePokerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F069099B200EDD6900745E55 /* TelepresencePokerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelepresencePokerUITests.swift; sourceTree = "<group>"; };
 		F069099D200EDD6900745E55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F06909A9200EDE0500745E55 /* TPMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TPMainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				F069097B200EDD6900745E55 /* AppDelegate.swift */,
+				F06909A9200EDE0500745E55 /* TPMainViewController.swift */,
 				F069097D200EDD6900745E55 /* ViewController.swift */,
 				F069097F200EDD6900745E55 /* Main.storyboard */,
 				F0690982200EDD6900745E55 /* Assets.xcassets */,
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F06909AA200EDE0500745E55 /* TPMainViewController.swift in Sources */,
 				F069097E200EDD6900745E55 /* ViewController.swift in Sources */,
 				F069097C200EDD6900745E55 /* AppDelegate.swift in Sources */,
 			);
