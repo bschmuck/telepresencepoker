@@ -19,8 +19,9 @@ class TPMainViewController: UIViewController {
     @IBOutlet weak var cancelButton: UIButton!
     @IBOutlet weak var raiseView: UIView!
     @IBOutlet weak var raiseLabel: UILabel!
+    @IBOutlet weak var handView: UIView!
     
-    var raiseVal = 25
+    var raiseVal = 15
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,14 +35,19 @@ class TPMainViewController: UIViewController {
         addButton.addTarget(self, action: #selector(incRaise), for: .touchUpInside)
         cancelButton.addTarget(self, action: #selector(hideRaiseView), for: .touchUpInside)
         raiseButton.addTarget(self, action: #selector(showRaiseView), for: .touchUpInside)
+        handView.layer.cornerRadius = 15
     }
     
     @objc func showRaiseView() {
-        raiseView.isHidden = false
+        UIView.animate(withDuration: 0.2) {
+            self.raiseView.isHidden = false
+        }
     }
     
     @objc func hideRaiseView() {
-        raiseView.isHidden = true
+        UIView.animate(withDuration: 0.2) {
+            self.raiseView.isHidden = true
+        }
     }
     
     @objc func incRaise() {

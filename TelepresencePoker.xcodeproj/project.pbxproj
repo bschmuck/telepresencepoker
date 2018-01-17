@@ -10,11 +10,12 @@
 		F069097C200EDD6900745E55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F069097B200EDD6900745E55 /* AppDelegate.swift */; };
 		F069097E200EDD6900745E55 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F069097D200EDD6900745E55 /* ViewController.swift */; };
 		F0690981200EDD6900745E55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F069097F200EDD6900745E55 /* Main.storyboard */; };
-		F0690983200EDD6900745E55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0690982200EDD6900745E55 /* Assets.xcassets */; };
 		F0690986200EDD6900745E55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0690984200EDD6900745E55 /* LaunchScreen.storyboard */; };
 		F0690991200EDD6900745E55 /* TelepresencePokerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0690990200EDD6900745E55 /* TelepresencePokerTests.swift */; };
 		F069099C200EDD6900745E55 /* TelepresencePokerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F069099B200EDD6900745E55 /* TelepresencePokerUITests.swift */; };
 		F06909AA200EDE0500745E55 /* TPMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06909A9200EDE0500745E55 /* TPMainViewController.swift */; };
+		F06909AC200EE5B600745E55 /* TPHandManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06909AB200EE5B600745E55 /* TPHandManager.swift */; };
+		F06909AE200EE8E900745E55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F06909AD200EE8E900745E55 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +40,6 @@
 		F069097B200EDD6900745E55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F069097D200EDD6900745E55 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F0690980200EDD6900745E55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F0690982200EDD6900745E55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0690985200EDD6900745E55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F0690987200EDD6900745E55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F069098C200EDD6900745E55 /* TelepresencePokerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TelepresencePokerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +49,8 @@
 		F069099B200EDD6900745E55 /* TelepresencePokerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelepresencePokerUITests.swift; sourceTree = "<group>"; };
 		F069099D200EDD6900745E55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F06909A9200EDE0500745E55 /* TPMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TPMainViewController.swift; sourceTree = "<group>"; };
+		F06909AB200EE5B600745E55 /* TPHandManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TPHandManager.swift; sourceTree = "<group>"; };
+		F06909AD200EE8E900745E55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +103,12 @@
 			children = (
 				F069097B200EDD6900745E55 /* AppDelegate.swift */,
 				F06909A9200EDE0500745E55 /* TPMainViewController.swift */,
+				F06909AB200EE5B600745E55 /* TPHandManager.swift */,
 				F069097D200EDD6900745E55 /* ViewController.swift */,
 				F069097F200EDD6900745E55 /* Main.storyboard */,
-				F0690982200EDD6900745E55 /* Assets.xcassets */,
 				F0690984200EDD6900745E55 /* LaunchScreen.storyboard */,
 				F0690987200EDD6900745E55 /* Info.plist */,
+				F06909AD200EE8E900745E55 /* Assets.xcassets */,
 			);
 			path = TelepresencePoker;
 			sourceTree = "<group>";
@@ -236,7 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0690986200EDD6900745E55 /* LaunchScreen.storyboard in Resources */,
-				F0690983200EDD6900745E55 /* Assets.xcassets in Resources */,
+				F06909AE200EE8E900745E55 /* Assets.xcassets in Resources */,
 				F0690981200EDD6900745E55 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F06909AC200EE5B600745E55 /* TPHandManager.swift in Sources */,
 				F06909AA200EDE0500745E55 /* TPMainViewController.swift in Sources */,
 				F069097E200EDD6900745E55 /* ViewController.swift in Sources */,
 				F069097C200EDD6900745E55 /* AppDelegate.swift in Sources */,
