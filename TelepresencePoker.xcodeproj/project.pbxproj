@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24088DABD5A33A214DF75F68 /* Pods_TelepresencePokerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DD48BC86729A0C40232093F /* Pods_TelepresencePokerTests.framework */; };
+		334B1D1D87D8BCC89A2EDEC2 /* Pods_TelepresencePoker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7869473EDD88CC57FCDAE65F /* Pods_TelepresencePoker.framework */; };
+		94246DEC8E557A50610333C5 /* Pods_TelepresencePokerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DA7BC7BC6C7CA200AD145A1 /* Pods_TelepresencePokerUITests.framework */; };
 		F069097C200EDD6900745E55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F069097B200EDD6900745E55 /* AppDelegate.swift */; };
 		F069097E200EDD6900745E55 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F069097D200EDD6900745E55 /* ViewController.swift */; };
 		F0690981200EDD6900745E55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F069097F200EDD6900745E55 /* Main.storyboard */; };
@@ -36,6 +39,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0FAF7ECFFD9214F3CD9B2954 /* Pods-TelepresencePoker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TelepresencePoker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TelepresencePoker/Pods-TelepresencePoker.debug.xcconfig"; sourceTree = "<group>"; };
+		1DA7BC7BC6C7CA200AD145A1 /* Pods_TelepresencePokerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TelepresencePokerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A53C84CD6EDFA0D060652E2 /* Pods-TelepresencePokerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TelepresencePokerUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TelepresencePokerUITests/Pods-TelepresencePokerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3DD48BC86729A0C40232093F /* Pods_TelepresencePokerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TelepresencePokerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7869473EDD88CC57FCDAE65F /* Pods_TelepresencePoker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TelepresencePoker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2B134E7E4E0B4D2B90CF425 /* Pods-TelepresencePoker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TelepresencePoker.release.xcconfig"; path = "Pods/Target Support Files/Pods-TelepresencePoker/Pods-TelepresencePoker.release.xcconfig"; sourceTree = "<group>"; };
+		C599EDEEB4BA78E202C6BCDB /* Pods-TelepresencePokerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TelepresencePokerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TelepresencePokerTests/Pods-TelepresencePokerTests.release.xcconfig"; sourceTree = "<group>"; };
+		C763E762CAF18EEEA5F1EE01 /* Pods-TelepresencePokerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TelepresencePokerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TelepresencePokerTests/Pods-TelepresencePokerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F0690978200EDD6900745E55 /* TelepresencePoker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TelepresencePoker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F069097B200EDD6900745E55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F069097D200EDD6900745E55 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -51,6 +62,7 @@
 		F06909A9200EDE0500745E55 /* TPMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TPMainViewController.swift; sourceTree = "<group>"; };
 		F06909AD200EE8E900745E55 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F06909B1200FDA9600745E55 /* TPGameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TPGameState.swift; sourceTree = "<group>"; };
+		F38AE5B791E67D8CDE00B318 /* Pods-TelepresencePokerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TelepresencePokerUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TelepresencePokerUITests/Pods-TelepresencePokerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				334B1D1D87D8BCC89A2EDEC2 /* Pods_TelepresencePoker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24088DABD5A33A214DF75F68 /* Pods_TelepresencePokerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +86,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94246DEC8E557A50610333C5 /* Pods_TelepresencePokerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		142939BB826CA15CA6DFCECE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7869473EDD88CC57FCDAE65F /* Pods_TelepresencePoker.framework */,
+				3DD48BC86729A0C40232093F /* Pods_TelepresencePokerTests.framework */,
+				1DA7BC7BC6C7CA200AD145A1 /* Pods_TelepresencePokerUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F069096F200EDD6900745E55 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +110,8 @@
 				F069098F200EDD6900745E55 /* TelepresencePokerTests */,
 				F069099A200EDD6900745E55 /* TelepresencePokerUITests */,
 				F0690979200EDD6900745E55 /* Products */,
+				FB6D7B031254ED8F4BA8F87C /* Pods */,
+				142939BB826CA15CA6DFCECE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -131,6 +158,19 @@
 			path = TelepresencePokerUITests;
 			sourceTree = "<group>";
 		};
+		FB6D7B031254ED8F4BA8F87C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0FAF7ECFFD9214F3CD9B2954 /* Pods-TelepresencePoker.debug.xcconfig */,
+				A2B134E7E4E0B4D2B90CF425 /* Pods-TelepresencePoker.release.xcconfig */,
+				C763E762CAF18EEEA5F1EE01 /* Pods-TelepresencePokerTests.debug.xcconfig */,
+				C599EDEEB4BA78E202C6BCDB /* Pods-TelepresencePokerTests.release.xcconfig */,
+				F38AE5B791E67D8CDE00B318 /* Pods-TelepresencePokerUITests.debug.xcconfig */,
+				3A53C84CD6EDFA0D060652E2 /* Pods-TelepresencePokerUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,9 +178,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F06909A0200EDD6900745E55 /* Build configuration list for PBXNativeTarget "TelepresencePoker" */;
 			buildPhases = (
+				16145C0B29E3E6A494C2921F /* [CP] Check Pods Manifest.lock */,
 				F0690974200EDD6900745E55 /* Sources */,
 				F0690975200EDD6900745E55 /* Frameworks */,
 				F0690976200EDD6900745E55 /* Resources */,
+				74CBF72B8ADE169DDBC7BB29 /* [CP] Embed Pods Frameworks */,
+				02E38E0CAE7F61F5571FFCE8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -155,9 +198,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F06909A3200EDD6900745E55 /* Build configuration list for PBXNativeTarget "TelepresencePokerTests" */;
 			buildPhases = (
+				E38D3B3B20E328FEF8333A72 /* [CP] Check Pods Manifest.lock */,
 				F0690988200EDD6900745E55 /* Sources */,
 				F0690989200EDD6900745E55 /* Frameworks */,
 				F069098A200EDD6900745E55 /* Resources */,
+				7FAF1893BD33B8EB7F4C1E78 /* [CP] Embed Pods Frameworks */,
+				54A71CC4FD80B27C653D4074 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -173,9 +219,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F06909A6200EDD6900745E55 /* Build configuration list for PBXNativeTarget "TelepresencePokerUITests" */;
 			buildPhases = (
+				7DB9DDD44F7BA188613B9061 /* [CP] Check Pods Manifest.lock */,
 				F0690993200EDD6900745E55 /* Sources */,
 				F0690994200EDD6900745E55 /* Frameworks */,
 				F0690995200EDD6900745E55 /* Resources */,
+				FBE2DA7A4C8D730D8A998FBD /* [CP] Embed Pods Frameworks */,
+				8DB73F44BCC876918FBEBEC9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -259,6 +308,156 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02E38E0CAE7F61F5571FFCE8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TelepresencePoker/Pods-TelepresencePoker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		16145C0B29E3E6A494C2921F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TelepresencePoker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54A71CC4FD80B27C653D4074 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TelepresencePokerTests/Pods-TelepresencePokerTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		74CBF72B8ADE169DDBC7BB29 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TelepresencePoker/Pods-TelepresencePoker-frameworks.sh",
+				"${PODS_ROOT}/TwilioVideo/TwilioVideo.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwilioVideo.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TelepresencePoker/Pods-TelepresencePoker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7DB9DDD44F7BA188613B9061 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TelepresencePokerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7FAF1893BD33B8EB7F4C1E78 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TelepresencePokerTests/Pods-TelepresencePokerTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8DB73F44BCC876918FBEBEC9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TelepresencePokerUITests/Pods-TelepresencePokerUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E38D3B3B20E328FEF8333A72 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TelepresencePokerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FBE2DA7A4C8D730D8A998FBD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TelepresencePokerUITests/Pods-TelepresencePokerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F0690974200EDD6900745E55 /* Sources */ = {
@@ -432,6 +631,7 @@
 		};
 		F06909A1200EDD6900745E55 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FAF7ECFFD9214F3CD9B2954 /* Pods-TelepresencePoker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -447,6 +647,7 @@
 		};
 		F06909A2200EDD6900745E55 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2B134E7E4E0B4D2B90CF425 /* Pods-TelepresencePoker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -462,6 +663,7 @@
 		};
 		F06909A4200EDD6900745E55 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C763E762CAF18EEEA5F1EE01 /* Pods-TelepresencePokerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -479,6 +681,7 @@
 		};
 		F06909A5200EDD6900745E55 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C599EDEEB4BA78E202C6BCDB /* Pods-TelepresencePokerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -496,6 +699,7 @@
 		};
 		F06909A7200EDD6900745E55 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F38AE5B791E67D8CDE00B318 /* Pods-TelepresencePokerUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -512,6 +716,7 @@
 		};
 		F06909A8200EDD6900745E55 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A53C84CD6EDFA0D060652E2 /* Pods-TelepresencePokerUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
