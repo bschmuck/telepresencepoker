@@ -245,6 +245,21 @@
                                     <color key="titleColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qf9-Kv-LhY" customClass="TVIVideoView">
+                                <rect key="frame" x="574" y="160" width="79" height="110"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="9t5-w2-ORQ"/>
+                                    <constraint firstAttribute="width" constant="79" id="uRs-c1-ZGP"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1XV-Ta-NMl">
+                                <rect key="frame" x="27" y="172" width="71" height="30"/>
+                                <state key="normal" title="Start Chat"/>
+                                <connections>
+                                    <action selector="pressedStartChat:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sxX-Vf-J2S"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -254,6 +269,7 @@
                             <constraint firstItem="j3e-wS-dJz" firstAttribute="centerY" secondItem="N9q-wy-Wt9" secondAttribute="centerY" id="Bk4-K5-tqb"/>
                             <constraint firstItem="Qds-XQ-1ww" firstAttribute="centerY" secondItem="8ce-ZN-ZYF" secondAttribute="centerY" id="F2E-CO-U35"/>
                             <constraint firstItem="N9q-wy-Wt9" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="FUJ-j7-ctg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Qf9-Kv-LhY" secondAttribute="trailing" constant="14" id="Ig2-l9-RNy"/>
                             <constraint firstItem="FKz-zm-dLO" firstAttribute="top" secondItem="j3e-wS-dJz" secondAttribute="bottom" constant="-1" id="Iz6-dO-uzW"/>
                             <constraint firstItem="AJ5-Bc-eHy" firstAttribute="leading" secondItem="j3e-wS-dJz" secondAttribute="trailing" constant="25" id="J55-va-jBR"/>
                             <constraint firstItem="hBT-zc-NvA" firstAttribute="leading" secondItem="Zyz-wH-3kh" secondAttribute="trailing" constant="8" id="JBC-Bf-Gvf"/>
@@ -266,16 +282,19 @@
                             <constraint firstItem="Zyz-wH-3kh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="YNy-8F-WtV"/>
                             <constraint firstItem="K1j-9R-ZyT" firstAttribute="centerY" secondItem="j3e-wS-dJz" secondAttribute="centerY" id="aj5-R0-zuV"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Iqq-YL-oAi" secondAttribute="trailing" id="b2G-sI-jkJ"/>
+                            <constraint firstItem="Iqq-YL-oAi" firstAttribute="top" secondItem="Qf9-Kv-LhY" secondAttribute="bottom" constant="14" id="dWV-ju-TEJ"/>
                             <constraint firstItem="yXh-Tk-F5H" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="f83-PI-KKS"/>
                             <constraint firstItem="j3e-wS-dJz" firstAttribute="leading" secondItem="K1j-9R-ZyT" secondAttribute="trailing" constant="25" id="jGd-xf-v3S"/>
                             <constraint firstItem="ViL-Ku-4uo" firstAttribute="centerY" secondItem="8ce-ZN-ZYF" secondAttribute="centerY" id="jPm-g8-PgW"/>
                             <constraint firstItem="4O3-3f-Hga" firstAttribute="leading" secondItem="hBT-zc-NvA" secondAttribute="trailing" constant="8" id="nhv-B9-XmA"/>
                             <constraint firstItem="AJ5-Bc-eHy" firstAttribute="centerY" secondItem="j3e-wS-dJz" secondAttribute="centerY" id="nkP-7c-cd5"/>
                             <constraint firstItem="yXh-Tk-F5H" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="okD-Fh-dMM"/>
+                            <constraint firstItem="1XV-Ta-NMl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="oww-Az-sR8"/>
                             <constraint firstItem="Iqq-YL-oAi" firstAttribute="top" secondItem="4O3-3f-Hga" secondAttribute="top" id="pOw-WJ-4Wz"/>
                             <constraint firstItem="8ce-ZN-ZYF" firstAttribute="centerY" secondItem="yXh-Tk-F5H" secondAttribute="centerY" id="qcu-iH-eoo"/>
                             <constraint firstItem="hBT-zc-NvA" firstAttribute="centerY" secondItem="Zyz-wH-3kh" secondAttribute="centerY" id="yex-FD-9Kf"/>
                             <constraint firstItem="yXh-Tk-F5H" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.2" id="zNg-sU-hSC"/>
+                            <constraint firstItem="1XV-Ta-NMl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="27" id="zZL-iA-AJH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -293,6 +312,7 @@
                         <outlet property="handCard5" destination="HYZ-9U-1YT" id="jpF-hA-AWb"/>
                         <outlet property="handView" destination="Iqq-YL-oAi" id="alC-QO-p4z"/>
                         <outlet property="potLabel" destination="K51-Cw-eE6" id="rPT-6n-p6K"/>
+                        <outlet property="previewView" destination="Qf9-Kv-LhY" id="Snm-lc-j52"/>
                         <outlet property="raiseButton" destination="hBT-zc-NvA" id="OS8-qA-E7R"/>
                         <outlet property="raiseLabel" destination="j3e-wS-dJz" id="Eis-PW-lKs"/>
                         <outlet property="raiseView" destination="N9q-wy-Wt9" id="JwF-Yi-FGN"/>
