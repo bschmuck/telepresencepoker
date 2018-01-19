@@ -22,9 +22,9 @@ class TPMainViewController: UIViewController {
     }
     
     // Client Identity is "player_iphone"
-    var player_iphone_accessToken: String = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImN0eSI6InR3aWxpby1mcGE7dj0xIn0.eyJqdGkiOiJTS2RlZTM4YmU3MGVhOTllMTA5MzE1MzRkODdkZTRlNmNlLTE1MTYzMDc4MzMiLCJpc3MiOiJTS2RlZTM4YmU3MGVhOTllMTA5MzE1MzRkODdkZTRlNmNlIiwic3ViIjoiQUNjMWYzNWQzNzQzYzA5MjIwMWM5ZTUyN2MyMTM3Y2QxNSIsImV4cCI6MTUxNjMxMTQzMywiZ3JhbnRzIjp7ImlkZW50aXR5IjoicGxheWVyX2lwaG9uZSIsInZpZGVvIjp7fX19.KcL8iYvGhF4AWrsCagByfAkjPmQRj3CnkbcweboEoTs"
+    var player_iphone_accessToken: String = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImN0eSI6InR3aWxpby1mcGE7dj0xIn0.eyJqdGkiOiJTS2RlZTM4YmU3MGVhOTllMTA5MzE1MzRkODdkZTRlNmNlLTE1MTYzMzY5MTkiLCJpc3MiOiJTS2RlZTM4YmU3MGVhOTllMTA5MzE1MzRkODdkZTRlNmNlIiwic3ViIjoiQUNjMWYzNWQzNzQzYzA5MjIwMWM5ZTUyN2MyMTM3Y2QxNSIsImV4cCI6MTUxNjM0MDUxOSwiZ3JhbnRzIjp7ImlkZW50aXR5IjoicGxheWVyX2lwaG9uZSIsInZpZGVvIjp7fX19.znKR8d9DXzll6J-h12U97QadHYYGHOlrsHxS9ubYuBo"
     
-    var board_ipad_accessToken: String = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImN0eSI6InR3aWxpby1mcGE7dj0xIn0.eyJqdGkiOiJTS2RlZTM4YmU3MGVhOTllMTA5MzE1MzRkODdkZTRlNmNlLTE1MTYzMDc3MzQiLCJpc3MiOiJTS2RlZTM4YmU3MGVhOTllMTA5MzE1MzRkODdkZTRlNmNlIiwic3ViIjoiQUNjMWYzNWQzNzQzYzA5MjIwMWM5ZTUyN2MyMTM3Y2QxNSIsImV4cCI6MTUxNjMxMTMzNCwiZ3JhbnRzIjp7ImlkZW50aXR5IjoiYm9hcmRfaXBhZCIsInZpZGVvIjp7fX19.4gLSRiKvn4neBwqHYquTEO_bjTcNU8ZfTfzW1blqR08"
+    var board_ipad_accessToken: String = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImN0eSI6InR3aWxpby1mcGE7dj0xIn0.eyJqdGkiOiJTS2RlZTM4YmU3MGVhOTllMTA5MzE1MzRkODdkZTRlNmNlLTE1MTYzMzY5MzYiLCJpc3MiOiJTS2RlZTM4YmU3MGVhOTllMTA5MzE1MzRkODdkZTRlNmNlIiwic3ViIjoiQUNjMWYzNWQzNzQzYzA5MjIwMWM5ZTUyN2MyMTM3Y2QxNSIsImV4cCI6MTUxNjM0MDUzNiwiZ3JhbnRzIjp7ImlkZW50aXR5IjoiYm9hcmRfaXBhZCIsInZpZGVvIjp7fX19.TvQelxpI5ywa_k2UDieWJRr7BhLOi3hizOmAVXGBYVU"
     
     
     // Video SDK components
@@ -66,6 +66,10 @@ class TPMainViewController: UIViewController {
     @IBOutlet weak var tableCard3: UIImageView!
     @IBOutlet weak var tableCard4: UIImageView!
     @IBOutlet weak var tableCard5: UIImageView!
+    
+    @IBOutlet weak var rotateSlider: UISlider!
+    
+    @IBOutlet weak var headerView: UIView!
     
     let stateManager = TPGameState()
     
@@ -122,8 +126,10 @@ class TPMainViewController: UIViewController {
     func setupRemoteVideoView() {
         // Creating `TVIVideoView` programmatically
         self.remoteView = TVIVideoView.init(frame: CGRect.zero, delegate:self)
+    
         
         self.view.insertSubview(self.remoteView!, at: 0)
+        
         
         // `TVIVideoView` supports scaleToFill, scaleAspectFill and scaleAspectFit
         // scaleAspectFit is the default mode when you create `TVIVideoView` programmatically.
@@ -163,17 +169,8 @@ class TPMainViewController: UIViewController {
         self.view.addConstraint(height)
         
     }
-
-    @IBAction func pressedStartChat(_ sender: Any) {
-        var accessToken: String = ""
-        
-        if PlatformUtils.isSimulator {
-            accessToken = board_ipad_accessToken
-        } else {
-            accessToken = player_iphone_accessToken
-        }
-        //        var accessToken: String = player_iphone_accessToken
-        
+    
+    func connectChat(accessToken: String) {
         self.prepareLocalMedia()
         
         // Preparing the connect options with the access token that we fetched (or hardcoded).
@@ -192,30 +189,28 @@ class TPMainViewController: UIViewController {
         room = TwilioVideo.connect(with: connectOptions, delegate: self)
         
         print("Attempting to connect to room \(String(describing: "TEST_ROOM"))")
+    }
+
+    @IBAction func pressedStartChat(_ sender: Any) {
+        connectChat(accessToken: board_ipad_accessToken)
         
-        //        self.showRoomUI(inRoom: true)
-        //        self.dismissKeyboard()
+        betButton.isHidden = true
+        raiseButton.isHidden = true
+        foldButton.isHidden = true
+        handView.isHidden = true
+        rotateSlider.isHidden = true
         
+        headerView.isHidden = true
+        raiseLabel.isHidden = true
         
-        //        var localVideoTrack : TVILocalVideoTrack?
-        //
-        //        if let camera = TVICameraCapturer(source: .frontCamera) {
-        //            localVideoTrack = TVILocalVideoTrack.init(capturer: camera)
-        //        } else {
-        //            print("Camera initialization failed")
-        //        }
-        //
-        //        let connectOptions = TVIConnectOptions.init(token: player_iphone_accessToken) { (builder) in
-        //            builder.roomName = "my-room"
-        //
-        //            if let videoTrack = localVideoTrack {
-        //                builder.videoTracks = [ videoTrack ]
-        //            } else {
-        //                print("Couldn't make videoTrack")
-        //            }
-        //        }
-        //
-        //        room = TwilioVideo.connect(with: connectOptions, delegate:self)
+    }
+    
+    @IBAction func pressedStartRemote(_ sender: Any) {
+        connectChat(accessToken: player_iphone_accessToken)
+    }
+    
+    @IBAction func stoppedSlidingSlider(_ sender: Any) {
+        print("Ended sliding here")
     }
     
     func prepareLocalMedia() {
